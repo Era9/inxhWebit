@@ -204,24 +204,20 @@ nav a:hover {
     justify-content: center;
     margin-left: 50px;
     width: 600px;
-    /* Now because I wanted the text to also be aligned with the other text of the coffeshops, I gave the flex direction of the column for the description class. Three of the texts that describe the coffeeshop have this div. The width given is 600px with a margin to the left that gives the space between the img and the text. */
 }
 
 .title1 {
     margin-top: -75px;
-    /* On this div I only included the title and the paragraph for each coffeeshop. The text was lower so in order to put it upper I used -75px margin top.*/
 }
 
 .title1 h2 {
     text-align: center;
-    /* This is the part where I put the name of the coffeeshop and I wanted it to be aligned on the center of this div, so it appears in the middle of the text that is at the bottom of the title. */
 }
 
 .maps {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Justify content is part of the display flex property, I used this property to put the content in the center together with the align items.*/
 }
 
 .maps iframe {
