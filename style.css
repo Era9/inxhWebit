@@ -144,20 +144,17 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    /* I see it very helpful to have this button in a page, it sends you at the beginning of the page. This button is fixed at the bottom right side of the page, it is 50% transparent and has a border-radius of 10px. The display flex was used so that I could justify the arrow icon on the center and also align it on the center. Since this is an <a> tag, I also removed the decorations that are set by default. */
 }
 
 .firstup:hover {
     opacity: 1;
     color: rgb(82, 62, 7);
-    /* When you hover on this button the transparency is removed so it is opaque and the color changes but not the background-color. */
 }
 
-/* Second Page- Favorite Coffee Shops */
 
 .part1 {
     height: auto;
-    /* The height is determined based on the content of the div*/
+
 }
 
 .titulli p {
@@ -215,22 +212,18 @@ nav a:hover {
 
 .maps iframe {
     border-radius: 50%;
-    /* Since the images of the coffeeshops are on circle I also wanted that the maps to be the same that's why I aded radius. */
 }
 
-/*  Third webpage CAPTURING MOMENTS */
 
 .captured {
     height: auto;
     background-color: rgb(243, 243, 243);
-    /* I gave the height auto so that the height of this div is as long as the total content inside it, the same background color was used as in the previous webpages. */
 }
 
 .textsize a {
     font-weight: bold;
     text-decoration: none;
     color: rgb(82, 62, 7);
-    /* I added a link that sends you to my vsco account, I removed the decorations that are given by default from the <a> tag and changed the color.*/
 }
 
 .photos {
@@ -242,37 +235,32 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* In this page I have 9 pics and I wanted them to be shown 3X3 so on 3 rows and 3 columns. I added all the pics on this div with the class photos and gave a width of 80% with a margin auto that puts them in the middle of the page( 10% space on right and left). I used the display flex property that will wrap this content. Whenever 80% of the page was used, flex-wrap property putted the other pics on the other row.  */
 }
 
 .photos img {
     width: 300px;
     height: 300px;
     padding-bottom: 30px;
-    /* Now images have a square shape with 300px of width and height and a padding bottom of 30px that gives space between the pictures from the bottom. */
 }
 
 
 .navsco {
     z-index: 1;
-    /* Without this property images where going on top of the navigation bar, so I gave the nav a z-index of 1 so that the images will go under it. I didn't need this property on the other navs of other pages that's why I gave this class only to this nav. */
 }
 
 .images {
     width: 33%;
     text-align: center;
-    /* This div contains all the images that are shown on this webpage together with the text that will be shown when you hover and the width for each of them is 33%.*/
 }
 
 
 .images img {
     object-fit: cover;
-    /* It fits the image so it doesn't lose the resolution when the width and the height is changed. */
 }
 
 .Captions{
     position: relative;
-    /* Position is put relative so that the text will be put on top of the images. */
+    
 }
 
 .caption {
@@ -282,17 +270,17 @@ nav a:hover {
     transition: .5s ease-in-out;
     transform: translate(-50%, -50%);
     opacity: 0;
-    /* I wanted to describe shortly about each image, so I added another div with a class caption. I wanted the text to be on the middle of the image. I gave the position absolute so it is on top of it and the transition to happen for 0.5s with ease in out after effect. The transform property is put on translate, the first value positions the text on the x axis wehreas the second value positions it on the y axis, I also used inspect so that I get the text right in the middle. */
+    
 }
 
 .images:hover img {
     opacity: 0.2;
-    /* When you hover on the image, the image gets 80% transparent */
+    
 }
 
 .images:hover .caption {
     opacity: 1;
-    /* When you hover on the image, the text will be fully opaque and not transperent. */
+
 }
 
 .captiondetails {
