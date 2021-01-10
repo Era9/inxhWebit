@@ -103,7 +103,15 @@
 
 <script>
 
-
+function validateForm(){
+        var password = document.getElementById("password").value;
+        var email = document.getElementById("email").value;
+        var pswr = document.getElementById("psw-repeat").value;
+        let emailRegex = /^[a-z0-9+_.-]+@(.+)$/gi
+        if(!email.match(emailRegex)){
+            alert("Email duhet te jete e sakte");
+            return false;
+        }
     
         if(password === "" ){
             alert("Passwordi nuk duhet te jete i zbrazet");
