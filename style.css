@@ -172,7 +172,7 @@ nav a:hover {
     margin: auto;
     text-align: center;
     padding-top: 15px;
-    /* This is the first paragraph of the second webpage, it has a width of 60% of the whole width of the div and it is positioned on the center with the margin auto property, the text is aligned on the center and I added a 15px padding to have a distance form the title of this webpage. */
+    
 }
 
 .qendrat {
@@ -180,7 +180,6 @@ nav a:hover {
     padding-bottom: 60px;
     width: 90%;
     margin: auto;
-    /* This div contains the complete content of this webpage except the title and the first paragraph, I wanted to have all the content in this div so I could style it how I want it. I gave a 90% width of the screen for this div with a margin auto that puts it in the middle, so 5 % of both sides right and left is blank. And it has a 60px space from the nav bar and the footer. */
 }
 
 .mjeksia {
@@ -188,18 +187,15 @@ nav a:hover {
     justify-content: center;
     flex-direction: row;
     padding-bottom: 50px;
-    /* all the pics, text and the map for each coffe have the same class so that they have the same style and order. In this case the flex direction is on the row so the picture of the coffe, the text, and the location are put on a row direction with the flex-dircetion property. I also added a 50px padding to have a space from the other div.*/
 }
 
 .mjeksia p {
     align-content: center;
     margin-top: 15px;
-    /* The content of the page is aligned to the center with a margin top of 15px that gives a space from the title, this style is added to all the paragraphs that are part of the div with class favcoffees*/
 }
 
 #mjeksiapic img {
     border-radius: 50%;
-    /* The height and width of the image was set on the html and I also wanted to give a radius of 50% so the shape of the picture is a circle.*/
 }
 
 .description {
