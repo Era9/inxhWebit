@@ -50,8 +50,8 @@
         </div>
     </div>
 
-    <!-- <img src="img/gjinekologji.jpg" style="margin-top: 80px; display: block; margin-left: auto; margin-right: auto;"
-        alt="" id="slideshow"> -->
+    <img src="img/gjinekologji.jpg" style="margin-top: 80px; display: block; margin-left: auto; margin-right: auto;"
+        alt="" id="slideshow">
 
 
 
@@ -98,6 +98,7 @@
 
 
     // SLIDER
+
     var index = 0;
     var images = ['img/kirurgji.jpg', 'img/orl.jpg', 'img/qendrat.jpg'];
 
@@ -112,7 +113,6 @@
     $("#btn2").on("click", function () {
         $("#slideshow").attr('src', images[++index % images.length]);
     });
-
 </script>
 
 </html>
