@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 20px;
+   
+}
+
+.textsize {
+    font-size: 22px;
+    
+}
+
+.home,
+.qendra,
+.departaments {
+    text-decoration: overline; 
+}
+
+.part1 {
+    height: 100vh;
+    background-color: rgb(243, 243, 243);
+}
+
+
+.heading {
+    color: rgb(82, 62, 7);
+    text-align: center;
+    padding-top: 75px;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.795);
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    width: 100%;
+}
+
+
+nav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    /* I removed the text decorations that the <a> tag gets by default, the color of the text is white and the font size 18px, a padding of 20px is given to all the sides so that the text has spaces in between each other and top & bottom.*/
+}
+
+nav a:hover {
+    text-decoration: overline;
+    /* Whenever we hove on the <a> tag a white overline will appear. */
+}
+
+.homebanner,
+.part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* I created two divs on html file and each of them contains two div inside them, one for the img and the other for the text. Display flex property was used bcause I wanted to position the divs on the center and I needed to us the justify-content property that is part of the display flex.And the align item to center to put it right on the center so it gives margin to top and bottom.*/
+}
+
+.rreth-nesh img {
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-top: 30px;
+    box-shadow: 15px 15px 10px rgb(59, 38, 28);
+    -webkit-box-shadow: 15px 15px 10px rgb(59, 38, 28);
+    -moz-box-shadow: 15px 15px 10px rgb(59, 38, 28);
+    /* This is the picture shown in the first webpage, the picture originally had a rectangle shape so I added a border-radius so it has an elipse shape with a 2px solid black border. I also added box-shadow in the bottom-right, the third value is the opacity, 1px will give 0 transparency, whereas I decided to go with 10px so it is transparent a bit. */
+}
+
+.intro {
+    width: 20%;
+    margin-left: 30px;
+    font-size: 20px;
+    text-align: justify;
+    /* This is the text inside the .homebanner div, I wanted this text to be on the right side of the pic and so it isn't near the pic I gave a 70px margin left, the text is justified with a font size of 20px. */
+}
+
+.part2 {
+    height: 100vh;
+    /* I gave 100 vh to this div also.*/
+}
+
+.intro2 {
+    width: 40%;
+    margin-left: 120px;
+    font-size: 20px;
+    text-align: justify;
+    /*This div contains the title and the decsription of the second part of this webpage. The text has a width of 40%, so it takes 40% of the div that this is part of. The text is justified with a font size of 20px.*/
+}
+
+.intro2 h1{
+    padding-bottom: 15px;
+    /* I added this padding to creatte a space between the heading and the paragraph. */
+}
+
+.misioni-vizioni img {
+    width: 320px;
+    border: 1px solid #777;
+    margin-left: 150px;
+    margin-top: 70px;
+    object-fit: cover;
+    /* This div contains the piano image that has a width of 320px, I added the object-fit property so that the image doesn't stretch, margins were used to position this image.*/
+}
+
+.footer {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.795);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    /* This is the footer div, I added a 300px height and a width of 100% that is same as the navigation bar, the text is aligned on the center of this div with a white text color and a black background color. I used the display flex property so that the divs inside this div will be aranged on a column direction by flex-direction property. The items are aligned in the center and the content is justified on the center. I used the line-height property so that the texts have a bit of space in between each-other. */
+}
+
+.footer p {
+    color: white;
+    font-size: 20px;
+    /* The color of the text is white with a font-size of 20px.*/
+}
+
+.socialicons i {
+    padding: 13px;
+    font-size: 30px;
+    color: white;
+    /* The icons have a padding of 13px on each side and a font size of 30px so that the icons are larger with a white color. */
+}
+
+.firstup {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    color: black;
+    font-size: 25px;
+    opacity: 0.5;
+    background: rgba(173, 167, 167, 0.34);
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* I see it very helpful to have this button in a page, it sends you at the beginning of the page. This button is fixed at the bottom right side of the page, it is 50% transparent and has a border-radius of 10px. The display flex was used so that I could justify the arrow icon on the center and also align it on the center. Since this is an <a> tag, I also removed the decorations that are set by default. */
+}
+
+.firstup:hover {
+    opacity: 1;
+    color: rgb(82, 62, 7);
+    /* When you hover on this button the transparency is removed so it is opaque and the color changes but not the background-color. */
+}
+
+/* Second Page- Favorite Coffee Shops */
+
+.part1 {
+    height: auto;
+    /* The height is determined based on the content of the div*/
+}
+
+.titulli p {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15px;
+    /* This is the first paragraph of the second webpage, it has a width of 60% of the whole width of the div and it is positioned on the center with the margin auto property, the text is aligned on the center and I added a 15px padding to have a distance form the title of this webpage. */
+}
+
+.qendrat {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 90%;
+    margin: auto;
+    /* This div contains the complete content of this webpage except the title and the first paragraph, I wanted to have all the content in this div so I could style it how I want it. I gave a 90% width of the screen for this div with a margin auto that puts it in the middle, so 5 % of both sides right and left is blank. And it has a 60px space from the nav bar and the footer. */
+}
+
+.mjeksia {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 50px;
+    /* all the pics, text and the map for each coffe have the same class so that they have the same style and order. In this case the flex direction is on the row so the picture of the coffe, the text, and the location are put on a row direction with the flex-dircetion property. I also added a 50px padding to have a space from the other div.*/
+}
+
+.mjeksia p {
+    align-content: center;
+    margin-top: 15px;
+    /* The content of the page is aligned to the center with a margin top of 15px that gives a space from the title, this style is added to all the paragraphs that are part of the div with class favcoffees*/
+}
+
+#mjeksiapic img {
+    border-radius: 50%;
+    /* The height and width of the image was set on the html and I also wanted to give a radius of 50% so the shape of the picture is a circle.*/
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    width: 600px;
+    /* Now because I wanted the text to also be aligned with the other text of the coffeshops, I gave the flex direction of the column for the description class. Three of the texts that describe the coffeeshop have this div. The width given is 600px with a margin to the left that gives the space between the img and the text. */
+}
+
+.title1 {
+    margin-top: -75px;
+    /* On this div I only included the title and the paragraph for each coffeeshop. The text was lower so in order to put it upper I used -75px margin top.*/
+}
+
+.title1 h2 {
+    text-align: center;
+    /* This is the part where I put the name of the coffeeshop and I wanted it to be aligned on the center of this div, so it appears in the middle of the text that is at the bottom of the title. */
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Justify content is part of the display flex property, I used this property to put the content in the center together with the align items.*/
+}
+
+.maps iframe {
+    border-radius: 50%;
+    /* Since the images of the coffeeshops are on circle I also wanted that the maps to be the same that's why I aded radius. */
+}
+
+/*  Third webpage CAPTURING MOMENTS */
+
+.captured {
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    /* I gave the height auto so that the height of this div is as long as the total content inside it, the same background color was used as in the previous webpages. */
+}
+
+.textsize a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(82, 62, 7);
+    /* I added a link that sends you to my vsco account, I removed the decorations that are given by default from the <a> tag and changed the color.*/
+}
+
+.photos {
+    width: 80%;
+    margin: auto;
+    letter-spacing: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* In this page I have 9 pics and I wanted them to be shown 3X3 so on 3 rows and 3 columns. I added all the pics on this div with the class photos and gave a width of 80% with a margin auto that puts them in the middle of the page( 10% space on right and left). I used the display flex property that will wrap this content. Whenever 80% of the page was used, flex-wrap property putted the other pics on the other row.  */
+}
+
+.photos img {
+    width: 300px;
+    height: 300px;
+    padding-bottom: 30px;
+    /* Now images have a square shape with 300px of width and height and a padding bottom of 30px that gives space between the pictures from the bottom. */
+}
+
+
+.navsco {
+    z-index: 1;
+    /* Without this property images where going on top of the navigation bar, so I gave the nav a z-index of 1 so that the images will go under it. I didn't need this property on the other navs of other pages that's why I gave this class only to this nav. */
+}
+
+.images {
+    width: 33%;
+    text-align: center;
+    /* This div contains all the images that are shown on this webpage together with the text that will be shown when you hover and the width for each of them is 33%.*/
+}
+
+
+.images img {
+    object-fit: cover;
+    /* It fits the image so it doesn't lose the resolution when the width and the height is changed. */
+}
+
+.Captions{
+    position: relative;
+    /* Position is put relative so that the text will be put on top of the images. */
+}
+
+.caption {
+    top: 44%;
+    left: 50%;
+    position: absolute;
+    transition: .5s ease-in-out;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /* I wanted to describe shortly about each image, so I added another div with a class caption. I wanted the text to be on the middle of the image. I gave the position absolute so it is on top of it and the transition to happen for 0.5s with ease in out after effect. The transform property is put on translate, the first value positions the text on the x axis wehreas the second value positions it on the y axis, I also used inspect so that I get the text right in the middle. */
+}
+
+.images:hover img {
+    opacity: 0.2;
+    /* When you hover on the image, the image gets 80% transparent */
+}
+
+.images:hover .caption {
+    opacity: 1;
+    /* When you hover on the image, the text will be fully opaque and not transperent. */
+}
+
+.captiondetails {
+    color: rgb(129, 89, 55);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-align: center;
+    letter-spacing: 20px;
+    /* This is the text inside, I added another div with the class captiondetails so that all the texts have that color, with a font size 15px, and a font weight of bold. The text is aligned on the center and has a padding of top and bottom 16px, right and left of 32px. I also changes the line spacing to 20px.*/
+}
+
+
+
+
+
+
+
+
+
+/*login form*/
