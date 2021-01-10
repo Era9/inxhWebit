@@ -92,12 +92,10 @@ nav a:hover {
     margin-left: 120px;
     font-size: 20px;
     text-align: justify;
-    /*This div contains the title and the decsription of the second part of this webpage. The text has a width of 40%, so it takes 40% of the div that this is part of. The text is justified with a font size of 20px.*/
 }
 
 .intro2 h1{
     padding-bottom: 15px;
-    /* I added this padding to creatte a space between the heading and the paragraph. */
 }
 
 .misioni-vizioni img {
@@ -106,7 +104,6 @@ nav a:hover {
     margin-left: 150px;
     margin-top: 70px;
     object-fit: cover;
-    /* This div contains the piano image that has a width of 320px, I added the object-fit property so that the image doesn't stretch, margins were used to position this image.*/
 }
 
 .footer {
@@ -119,7 +116,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     line-height: 30px;
-    /* This is the footer div, I added a 300px height and a width of 100% that is same as the navigation bar, the text is aligned on the center of this div with a white text color and a black background color. I used the display flex property so that the divs inside this div will be aranged on a column direction by flex-direction property. The items are aligned in the center and the content is justified on the center. I used the line-height property so that the texts have a bit of space in between each-other. */
 }
 
 .footer p {
