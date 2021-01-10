@@ -1,6 +1,6 @@
 function validateForm(){
     var username = document.getElementById("username").value;
-    
+    var password = document.getElementById("password").value;
 
     if(username === "" || password === "" ){
         alert("Te gjitha te dhenat duhet te mbushen!");
