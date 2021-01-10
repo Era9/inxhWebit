@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300&family=Roboto:wght@300&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.js">
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <title>E-health Sistemi</title>
+</head>
+
+<body>
+<div class="part1" id="first">
+    <nav>
+        <ul class="nav-links">
+            <a href="index.html" class="home">Home</a>
+            <a href="qendratmjekesore.html">Qendrat Mjekesore</a>
+            <a href="departamentet.html">Departamentet</a>
+            <a href="login.html">Login</a>
+        </ul>
+    </nav>
+    <h1 class="heading"></h1>
+    <div class="homebanner">
+       <div style="margin: 50px">
+           <form action="index.html" method="post" onsubmit="return validateForm()">
+
+               <div class="imgcontainer">
+                   <img src="img/img_avatar2.png" alt="Avatar" class="avatar">
+               </div>
+               <div class="container">
+                   <label for="username"><b>Username</b></label>
+                   <input type="text" placeholder="Enter Username" name="username" id="username" >
+                    <br>
+                   <label for="password"><b>Password</b></label>
+                   <input type="password" placeholder="Enter Password" name="password" id="password" >
+                   <br>
+                   <button type="submit">Login</button><br>
+                   <label>
+                       <input type="checkbox" checked="checked" name="remember"> Remember me
+                   </label>
+                   <p style="margin-top: 20px">Don't have an account? <span><a href="signup.html" id="id01">Sign up</a></span></p>
+               </div>
+           </form>
+
+           <script>
+            function validateForm(){
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                if(username === "" ){
+                    alert("Username nuk duhet te jete i zbrazet");
+                    return false;
+                }
+                if(password === "" ){
+                    alert("Passwordi nuk duhet te jete i zbrazet");
+                    return false;
+                }
+                // let regex = /^[a-z]{4}[0-9]{9}$/gi;
+                // if(!isbn.match(regex)){
+                //     alert("ISBN duhet ti permbaj 4 shkronja dhe 9 numra");
+                //     return false;
+                // }
+                // let emailRegex = /^[a-z0-9+_.-]+@(.+)$/gi
+                // if(!autori.match(emailRegex)){
+                //     alert("Autori duhet te jete email");
+                //     return false;
+                // }
+                return true;
+            }
+
+        </script>
+       </div>
+
+
+
+    </div>
+
+
+</div>
+
+
+
+
+<div class="footer">
+    <p>
+        Qendra e Mjekesise Familjare<br>
+        info@qkmf.com<br>
+        038/220-841<br>
+    </p>
+    <div class="socialicons">
+        <a href="https://www.facebook.com/qkmfpr" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+</div>
+<a class="firstup" href="#first"><i class="fa fa-chevron-up"></i></a>
+</body>
+<style>
+    img{
+        width: 900px;
+        height: 300px;
+        box-shadow: 10px 10px 8px 10px #888888;
+    }
+    /* Bordered form */
+    form {
+        border: 3px solid #f1f1f1;
+    }
+
+    /* Full-width inputs */
+    input[type=text], input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    /* Add a hover effect for buttons */
+    button:hover {
+        opacity: 0.8;
+    }
+
+    /* Extra style for the cancel button (red) */
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+
+    /* Center the avatar image inside this container */
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+    }
+
+    /* Avatar image */
+    img.avatar {
+        width: 90%;
+        border-radius: 50%;
+    }
+
+    /* Add padding to containers */
+    .container {
+        padding: 16px;
+    }
+
+    /* The "Forgot password" text */
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /* Change styles for span and cancel button on extra small screens */
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    }
+</style>
+<script>
+
+
+    // SLIDER
+    var index=0;
+    var images=['img/kirurgji.jpg','img/orl.jpg','img/qendrat.jpg'];
+
+    setInterval(function (){
+        $("#slideshow").attr('src', images[index++%images.length]);
+    },1000);
+
+    $("#btn1").on("click", function(){
+        $("#slideshow").attr('src', images[--index%images.length]);
+    });
+
+    $("#btn2").on("click", function(){
+        $("#slideshow").attr('src', images[++index%images.length]);
+    });
+
+</script>
+<script>
+
+
+
+    function validateForm(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if(username === ""){
+            alert("Username nuk duhet te jete i zbrazet");
+            return false;
+        }
+        if(password === ""){
+            alert("Password nuk duhet te jete i zbrazet");
+            return false;
+        }
+        // let regex = /^[a-z]{4}[0-9]{9}$/gi;
+        // if(!isbn.match(regex)){
+        //     alert("ISBN duhet ti permbaj 4 shkronja dhe 9 numra");
+        //     return false;
+        // }
+        // let emailRegex = /^[a-z0-9+_.-]+@(.+)$/gi
+        // if(!autori.match(emailRegex)){
+        //     alert("Autori duhet te jete email");
+        //     return false;
+        // }
+        return true;
+    }
+
+
+</script>
+
+</html>
