@@ -71,7 +71,6 @@ nav a:hover {
     box-shadow: 15px 15px 10px rgb(59, 38, 28);
     -webkit-box-shadow: 15px 15px 10px rgb(59, 38, 28);
     -moz-box-shadow: 15px 15px 10px rgb(59, 38, 28);
-    /* This is the picture shown in the first webpage, the picture originally had a rectangle shape so I added a border-radius so it has an elipse shape with a 2px solid black border. I also added box-shadow in the bottom-right, the third value is the opacity, 1px will give 0 transparency, whereas I decided to go with 10px so it is transparent a bit. */
 }
 
 .intro {
@@ -79,12 +78,10 @@ nav a:hover {
     margin-left: 30px;
     font-size: 20px;
     text-align: justify;
-    /* This is the text inside the .homebanner div, I wanted this text to be on the right side of the pic and so it isn't near the pic I gave a 70px margin left, the text is justified with a font size of 20px. */
 }
 
 .part2 {
     height: 100vh;
-    /* I gave 100 vh to this div also.*/
 }
 
 .intro2 {
@@ -128,7 +125,7 @@ nav a:hover {
     padding: 13px;
     font-size: 30px;
     color: white;
-    /* The icons have a padding of 13px on each side and a font size of 30px so that the icons are larger with a white color. */
+    /* ikonat */
 }
 
 .firstup {
