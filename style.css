@@ -108,7 +108,7 @@ nav a:hover {
 
 .footer {
     height: 300px;
-    width: 100%;
+    width: 100px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.795);
     display: flex;
